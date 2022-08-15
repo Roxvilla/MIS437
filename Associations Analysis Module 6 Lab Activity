@@ -12,9 +12,6 @@ df = pd.read_csv('./data/retail_data.csv', sep=',')
 ## Print first 10 rows 
 df.head(10)
 
-Each row of the dataset represents items that were purchased together on the same day at the same store.The dataset is a sparse dataset as relatively high percentage of data is NA or NaN or equivalent.
-
-These NaNs make it hard to read the table. Let’s find out how many unique items are actually there in the table.
 
 items = set()
 for col in df:
